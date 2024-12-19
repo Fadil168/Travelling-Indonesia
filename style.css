@@ -603,6 +603,7 @@ form button:hover {
 
     nav .menu ul {
         display: none;
+        margin-top: 60px;
         position: absolute;
         top: 100%;
         left: 0;
