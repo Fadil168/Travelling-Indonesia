@@ -17,7 +17,8 @@ body {
 }
 
 .layar-dalam {
-    width: 1000px;
+    max-width: 1200px; /* Ubah sesuai kebutuhan */
+    width: 90%; /* Lebar responsif */
     margin: auto;
 }
 
@@ -55,7 +56,7 @@ nav .logo img {
 nav .menu {
     float: right;
     height: 60px;
-    max-width: 600px;
+ max-width: 600px;
 }
 
 nav .menu ul {
@@ -82,7 +83,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Meng atur header */
+/* Mengatur header */
 header {
     position: relative;
     height: 100vh;
@@ -266,8 +267,8 @@ section#gallery h3 {
 }
 
 .gallery-container div {
-    flex: 1 1 calc(20% - 20px); /* Mengatur lebar gambar agar responsif */
-    margin: 10px; /* Menambahkan margin di sekitar gambar */
+    flex: 1 1 calc(33.33% - 20px); /* Tiga kolom pada layar besar */
+    margin: 10px; /* Jarak antar gambar */
     overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
     border-radius: 5px; /* Menambahkan sudut melengkung */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
@@ -291,6 +292,7 @@ section#gallery h3 {
     font-size: 14px; /* Ukuran font untuk keterangan */
     color: #333; /* Warna teks untuk keterangan */
 }
+
 section.quote {
     background: url("asset/Gunung Bromo.jpg") no-repeat;
     background-attachment: fixed;
@@ -373,7 +375,7 @@ section.quote .layar-dalam p {
 
 footer {
     background-color: #343a40; /* Warna latar belakang footer */
-    color: #FFF; /* Warna teks footer */
+    color : #FFF; /* Warna teks footer */
     padding: 20px 0; /* Padding atas dan bawah */
     text-align: center;
 }
@@ -384,7 +386,7 @@ footer .layar-dalam {
     justify-content: space-between; /* Menyebar konten footer */
     flex-wrap: wrap; /* Membuat konten membungkus jika diperlukan */
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -464,7 +466,7 @@ form {
 
 form label {
     margin-bottom: 5px;
-    font-weight : bold;
+    font-weight: bold;
 }
 
 form input,
@@ -499,6 +501,7 @@ form button:hover {
         top: 0;
         left: 0;
         width: 100%;
+        background-color: white;
     }
     nav .menu ul li {
         width: 100%;
