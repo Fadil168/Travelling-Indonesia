@@ -59,6 +59,13 @@ $(document).ready(function(){
     })
 });
 
+$(document).ready(function() {
+    $('#menu-toggle').click(function(e) {
+        e.preventDefault(); // Mencegah perilaku default anchor
+        $('nav .menu ul').toggleClass('aktif'); // Menambahkan atau menghapus kelas aktif
+    });
+});
+
 // Tambahkan event listener untuk menutup menu saat klik di luar
 $(document).on('click', function(event) {
     if (!$(event.target).closest('nav').length) {
